@@ -1,0 +1,164 @@
+/* --- MOBILE VERSION --- */
+body {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0px;
+  font-size: 15px;
+}
+
+a {
+  color: grey;
+}
+
+#logo {
+  padding: 20px 0px 20px 30px;
+  width: 23%;
+}
+
+#img-desktop{display: none;}
+#img-mobile{
+  display: block;
+  width: 100%;
+}
+
+.text-container {
+  text-align: center;
+}
+
+h1 {
+  color:  hsl(0, 6%, 24%); /* Dark Grayish Red */
+  font-weight: 600;
+  font-size: 50px;
+  letter-spacing: 10px;
+  margin-bottom: 0px;
+  padding: 30px 70px 0px 70px;
+  text-transform: uppercase;
+}
+
+.pink-title {
+  color: hsl(0, 36%, 70%); /* desaturated red */
+  font-weight: 300;
+}
+
+p {
+  color: hsl(0, 36%, 70%); /* desaturated red */
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 0px 57px 20px 57px;
+}
+
+.email-form {
+  height: 55px;
+  margin-bottom: 30px;
+}
+
+
+input {
+  color: hsl(0, 36%, 70%); /* desaturated red */
+  border: 2px solid;
+  border-radius: 50px;
+  vertical-align: top;
+  width: 60%;
+  height: 55px;
+  padding: 0px 0px 0px 20px;
+}
+
+.error{
+  display: none;
+}
+
+#error-icon {
+  margin-left: -100px;
+  padding-top: 20px;
+}
+
+
+button {
+  color: white;
+  background-image:linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border-radius: 29px;
+  border: none;
+  box-shadow: 2px 5px 10px hsla(0, 36%, 70%, 0.5);
+  margin-left: -70px;
+  vertical-align: top;
+  width: 72px;
+  height: 59px;
+}
+
+
+.sub-button:hover {
+  background-image:linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+}
+
+.footer {
+  color: grey;
+  font-size: 10px;
+  text-align: center;
+  height: 11px;
+}
+
+
+
+/* --- DESKTOP VERSION --- */
+
+@media only screen and (min-width: 800px) {
+
+  /* CONTAINER */
+  .logo-container { grid-area: logo; }
+  .photo-container { grid-area: photo; }
+  .text-container { grid-area: text; }
+  .footer { grid-area: footer; }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'logo photo'
+      'text photo'
+      'footer photo';
+  }
+
+  /* IMAGE */
+  #img-mobile{display: none;}
+  #img-desktop{display: block;}
+
+  /* GENERAL STYLING */
+
+  body {
+    padding-left: 150px;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-position: top left;
+  }
+
+  #logo {
+    margin-top: 50px;
+  }
+
+  .text-container {
+    text-align: left;
+  }
+
+  h1 {
+    padding: 0px 280px 0px 0px;
+    font-size: 70px;
+    line-height: 1.1;
+  }
+
+  p {
+    padding: 0px 280px 30px 0px;
+  }
+
+  input {
+    height: 55px;
+    width: 370px;
+  }
+
+  button {
+    height: 59px;
+    width: 72px;
+  }
+
+  .footer {
+    text-align: left;
+  }
+
+
+}
