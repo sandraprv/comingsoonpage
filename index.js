@@ -9,9 +9,12 @@ form.addEventListener("submit", (event) => {
   if (!validateEmail(emailVal)) {
     document.getElementById("email").classList.add("error");
     document.getElementById("inputMsg").innerHTML = "Please provide a valid email";
+    document.getElementById("inputMsg").style.color = "red";
+
   } else {
     document.getElementById("email").classList.remove("error");
     document.getElementById("inputMsg").innerHTML = "Thank you !";
+    document.getElementById("inputMsg").style.color = "black";
   }
 });
 
