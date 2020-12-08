@@ -39,11 +39,11 @@ h1 {
   font-weight: 300;
 }
 
-p {
+.p1{
   color: hsl(0, 36%, 70%); /* desaturated red */
   font-weight: 400;
   line-height: 1.6;
-  padding: 0px 57px 20px 57px;
+  padding: 0px 30px 20px 30px;
 }
 
 .email-form {
@@ -51,24 +51,27 @@ p {
   margin-bottom: 30px;
 }
 
+.search-box{
+  position: relative;
+}
+
 
 input {
   color: hsl(0, 36%, 70%); /* desaturated red */
+
   border: 2px solid;
   border-radius: 50px;
   vertical-align: top;
-  width: 60%;
+  width: 350px;
   height: 55px;
   padding: 0px 0px 0px 20px;
 }
 
-.error{
-  display: none;
-}
-
-#error-icon {
-  margin-left: -100px;
-  padding-top: 20px;
+input.error{
+  color: red;
+  background-image: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 270px 15px;
 }
 
 
@@ -85,9 +88,10 @@ button {
 }
 
 
-.sub-button:hover {
+button:hover {
   background-image:linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
 }
+
 
 .footer {
   color: grey;
@@ -95,8 +99,6 @@ button {
   text-align: center;
   height: 11px;
 }
-
-
 
 /* --- DESKTOP VERSION --- */
 
@@ -142,10 +144,6 @@ button {
     line-height: 1.1;
   }
 
-  p {
-    padding: 0px 280px 30px 0px;
-  }
-
   input {
     height: 55px;
     width: 370px;
@@ -159,6 +157,5 @@ button {
   .footer {
     text-align: left;
   }
-
 
 }
